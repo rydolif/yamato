@@ -1,20 +1,21 @@
 @import "libs"
 @import "base"
 
+.container
+	max-width: 1440px
+	width: 100%
+	margin: 0 auto
+	padding: 0 15px
+
 
 .header
 	position: fixed
 	right: 0
 	left: 0
-	background-color: rgba(0, 0, 0, .5)
+	background-color: $black
 	padding: 15px 0
 	transition: all .3s
 	z-index: 1001
-
-	&--active, &--menu
-		background-color: rgba(0, 0, 0, .8)
-		padding: 5px 0
-
 
 	&__container
 		position: relative
@@ -23,9 +24,7 @@
 		align-items: center
 
 
-.main
-	padding: 400px 0
-	
+
 .nav
 	ul
 		display: flex
@@ -62,7 +61,8 @@
 
 
 .footer
-	height: 1000px
+	padding: 30px
+	background-color: $black
 
 
 @import "page"

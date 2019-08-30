@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Start</title>
+	<title>Главная</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,22 +11,19 @@
 	<meta name="theme-color" content="#000">
 
 	<link rel="stylesheet" href="css/main.min.css?v=1">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Rubik:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- 	<div class="preloader">
-		<div class="pulse"></div>
-	</div> -->
-
 	<header class="header">
 		<div class="container">
 			<div class="header__container">
 		
-				<div class="header__logo">
-					<a href="index.html"><img src="img/logo.svg" alt="logo" width="160" height="75"></a>
-				</div>
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.png" alt="logo">
+				</a>
 
 				<button class="hamburger" type="button">
 					<span class="hamburger__box">
@@ -36,10 +33,10 @@
 
 				<nav class="nav">
 					<ul>
-						<li><a href="index.html">Головна</a></li>
-						<li><a href="catalog.html">Наші послуги</a></li>
-						<li><a href="about.html">Виконанні роботи</a></li>
-						<li><a href="contacts.html">Контакти</a></li>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Меню</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
 
@@ -62,44 +59,6 @@
 			
 		</div>
 	</footer>
-
-	<!-- modal -->
-		<div class="modal" id="order">
-			<form action="sendmail.php" class="form" method="post">
-
-				<button class="close order_close" type="button">
-					<span></span>
-					<span></span>
-				</button>
-
-				<h3>Оставьте заявку, <br>мы свяжемся с Вами</h3>
-				<input type="hidden" name="subject" value="Узнать подробнее!">
-
-				<div class="">
-					<input type="text" name="name" placeholder="Имя" required>
-				</div>
-				<div class="">
-					<input type="tel" name="phone" required placeholder="Телефон">
-				</div>
-				<div class="">
-					<button type="submit" class="btn" name="submit">Отправить</button>
-				</div>
-				<p>Нажимая на кнопку, вы даете согласие <br>на обработку своих <a href="#" target="_blank">персональных данных</a></p>
-
-			</form>
-		</div>
-
-		<div class="modal" id="thanks">
-			<button class="close thanks_close" type="button">
-				<span></span>
-				<span></span>
-			</button>
-			<h3>Спасибо <br>за доверие!</h3>
-			<p>Мы обязательно с вами свяжемся!</p>
-		</div>
-	<!-- modal end-->
-
-	<script src="js/scripts.min.js"></script>
 
 
 </body>
