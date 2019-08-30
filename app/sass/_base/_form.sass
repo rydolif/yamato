@@ -1,29 +1,66 @@
 .form
-	label.error
-		position: absolute
-		bottom: -25px
-		right: 25px
-		left: 25px
-		transition: all .3s
-		animation: error .3s linear 1 forwards
-		color: red
-		text-align: center
-		font-weight: 600
-		background-color: $accent
-		border-radius: 10px
-		&::before
-			content: ''
-			position: absolute
-			left: 50%
-			top: -8px
-			margin-left: -2px
-			border-bottom: 4px solid $accent
-			border-left: 4px solid transparent
-			border-right: 4px solid transparent
-			border-top: 4px solid transparent
+	display: flex
+	align-items: center
 
-	div
+	input
+		text-align: center
+		background-color: #1f1f1f
+		color: #fff
+		width: 40px
+		height: 25px
+		border: none
+
+	button
 		position: relative
-		margin-bottom: 20px
+		border-radius: 5px
+		background-color: $accent
+		outline: none
+		border: none
+		width: 26px
+		height: 26px
+		z-index: 1
+		padding: 0
+
+		&:first-child
+			margin-right: -3px
+
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				display: block
+				width: 15px
+				height: 2px
+				background-color: #fff
+
 		&:last-child
-			margin-bottom: 0
+			margin-left: -3px
+
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				display: block
+				background-color: #fff
+			
+			&::before
+				width: 15px
+				height: 2px
+
+			&::after
+				width: 2px
+				height: 15px
+
+	&--menu
+		button
+			width: 36px
+			height: 36px
+
+		input
+			height: 36px
+			width: 50px

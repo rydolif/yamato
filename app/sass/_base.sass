@@ -7,7 +7,7 @@ $title: 'Rubik', sans-serif
 //---------------------end-fonts---------------------
 
 //----------------------color---------------------
-$accent: #000
+$accent: #e90002
 $text: #fff
 $bg: #2d2d2d
 $black: #131313
@@ -31,20 +31,21 @@ body
 
 a, div, ul, li, input, textarea
 	transition: all .6s
-	
+
 	&:hover,
 	&:focus
 		outline: none
-
-section
-	overflow: hidden
 	
 h1, h2, h3, h4, h5, h6
-	font-weight: 700
+	font-weight: 500
 	line-height: 1.2
 	margin: 0
 	padding: 0
 	font-family: $title
+
+h2
+	font-size: 36px
+	text-align: center
 
 ul
 	margin: 0
@@ -92,12 +93,30 @@ input
 	&:-moz-placeholder
 		line-height: 50px
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+input[type="number"]
+  -moz-appearance: textfield
+
+input[type="number"]:hover,
+input[type="number"]:focus
+  -moz-appearance: number-input
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+
+
 textarea
 	&::placeholder
 		line-height: 1.4
 
 b, strong
-	font-weight: 700
+	font-weight: 500
 
 p
 	margin: 0
