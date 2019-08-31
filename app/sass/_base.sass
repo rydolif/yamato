@@ -58,13 +58,17 @@ i
 	color: #fff
 
 input, textarea
-	border: #000 1px solid
+	border: none
 	border-radius: 0
 	outline: none
 	box-shadow: none
 	-webkit-appearance: none
 	width: 100%
-	
+	background-color: #626262
+	border-radius: 5px
+	color: #b4b4b4
+	padding: 0 15px
+
 	&:focus:required:invalid
 		border-color: red
 		outline: none
@@ -78,37 +82,37 @@ input, textarea
 		-webkit-appearance: none
 
 	&::placeholder
-		color: #000
+		color: #b4b4b4
 
 input
-	height: 50px
-	line-height: 50px
+	height: 40px
+	line-height: 40px
 
 	&::placeholder
-		line-height: 50px
+		line-height: 40px
 
 	&::-webkit-input-placeholder,
 	&::-moz-placeholder,
 	&:-ms-input-placeholder,
 	&:-moz-placeholder
-		line-height: 50px
+		line-height: 40px
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button
-  -webkit-appearance: none
-  margin: 0
+	-webkit-appearance: none
+	margin: 0
 
 input[type="number"]
-  -moz-appearance: textfield
+	-moz-appearance: textfield
 
 input[type="number"]:hover,
 input[type="number"]:focus
-  -moz-appearance: number-input
+	-moz-appearance: number-input
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button
-  -webkit-appearance: none
-  margin: 0
+	-webkit-appearance: none
+	margin: 0
 
 
 textarea

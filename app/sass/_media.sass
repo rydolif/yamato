@@ -37,6 +37,10 @@
 	.container
 		max-width: 992px
 
+	.cart__form_footer
+		padding: 10px
+		.btn
+			padding: 0 25px
 
 	.arrow
 		&--prev
@@ -119,6 +123,15 @@
 	br
 		display: none
 
+	.cart
+		&__busket,
+		&__form
+			width: 100%
+
+		&__busket
+			margin-bottom: 20px
+
+
 	.header
 		&__logo
 			max-width: 180px
@@ -134,7 +147,8 @@
 		height: 250px
 		margin-top: 65px
 
-	.menu--bunner
+	.menu--bunner,
+	.cart
 		margin-top: 65px
 
 	.top,
@@ -142,7 +156,8 @@
 	.news,
 	.info,
 	.contacts,
-	.menu
+	.menu,
+	.cart
 		padding: 35px 0
 
 
@@ -227,6 +242,17 @@
 @media only screen and (max-width : 767px)
 	.container
 		max-width: 576px
+
+	.cart__busket
+		&_main
+			padding: 15px
+
+		.header__cart_main--form
+			width: 65%
+
+		&_item img
+			width: 80px
+			height: 80px
 
 	.header
 		&__tel
@@ -446,7 +472,8 @@
 		display: none
 	
 	.hero,
-	.menu
+	.menu,
+	.cart
 		margin-top: 52px
 	
 	.news__item
@@ -526,6 +553,8 @@
 			min-width: auto
 			margin: 0 auto 15px
 
+	.cart__busket_item
+		width: 100%
 
 	
 
