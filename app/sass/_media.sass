@@ -1,7 +1,10 @@
 
 @media only screen and (max-width : 1550px)
-	.header__cart_box
-		right: 0
+	.header__cart
+		padding-right: 50px
+
+		&_box
+			right: 0
 
 
 @media only screen and (max-width : 1440px)
@@ -17,10 +20,23 @@
 	.footer__col
 		width: 24%
 
+	.menu
+		&__nav
+			width: 20%
+			margin-right: 2%
+
+			a
+				padding-left: 15px
+				padding-right: 15px
+
+		&__list
+			width: 78%
+
 
 @media only screen and (max-width : 1200px)
 	.container
 		max-width: 992px
+
 
 	.arrow
 		&--prev
@@ -82,6 +98,19 @@
 		&__container--decor
 			padding: 30px 0
 
+	.menu
+		&__item
+			width: 31%
+
+		&__filter
+			padding: 10px
+
+			&_form div
+				margin-right: 20px
+
+		&__nav a
+			padding: 10px
+
 
 @media only screen and (max-width : 992px)
 	.container
@@ -105,11 +134,15 @@
 		height: 250px
 		margin-top: 65px
 
+	.menu--bunner
+		margin-top: 65px
+
 	.top,
 	.step,
 	.news,
 	.info,
-	.contacts
+	.contacts,
+	.menu
 		padding: 35px 0
 
 
@@ -175,6 +208,20 @@
 
 		&__logo
 			max-width: 180px
+
+	.menu
+		&__list
+			width: 70%
+
+		&__item
+			width: 48%
+			min-width: 48%
+
+		&__nav
+			width: 28%
+
+			&_header
+				padding-left: 0
 
 
 @media only screen and (max-width : 767px)
@@ -262,6 +309,15 @@
 			img
 				margin-right: 0 !important
 
+	.menu
+		&__filter
+
+			select
+				margin-left: 0
+
+		&__item
+			min-width: 48%
+
 
 @media only screen and (max-width : 576px)
 	h2
@@ -271,6 +327,110 @@
 	h3
 		font-size: 18px !important
 		margin-bottom: 15px !important
+	
+	.menu
+		position: relative
+		overflow: hidden
+
+		&__filter
+			display: none
+
+		&--bunner
+			display: none
+
+		&__nav
+			position: absolute
+			top: 0
+			left: 0
+			z-index: 999
+			width: 100%
+			margin-right: 0
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			padding: 10px 10px 0
+
+			a
+				padding: 15px
+
+
+			&_filter
+				position: absolute
+				right: 0
+				bottom: 0
+				background-color: #1f1f1f
+				flex-direction: column
+				z-index: 1
+				display: flex
+
+
+				&--img
+					position: relative
+					width: 45px
+					height: 45px
+					background-color: $black
+					display: block !important
+					margin-right: 0 !important
+
+					&:hover,
+					&:focus
+						div
+							display: block
+
+					div
+						display: none
+						position: absolute
+						top: 100%
+						right: 0
+						width: 230px
+						background-color: $black
+						padding: 20px
+
+					select
+						margin: 0 0 25px
+
+						&:last-child
+							margin-bottom: 0
+
+					img
+						position: absolute
+						left: 50%
+						top: 50%
+						transform: translate(-50%, -50%)
+						width: 16px
+						height: 16px
+	
+			&_mobile
+				overflow: auto
+				display: flex
+				margin-right: 40px
+				background-color: #1f1f1f
+
+			h4
+				font-size: 28px
+
+			ul
+				display: flex
+				margin-bottom: 0
+
+			li
+				border: none
+				white-space: nowrap
+
+			&_header
+				min-width: 95vw
+				margin-bottom: 0
+
+				&--disable
+					display: none
+
+		&__list
+			width: 100%
+
+
+		&__content
+			padding-top: 70px
+			
 
 	.header
 		&__container
@@ -285,9 +445,10 @@
 	.nav
 		display: none
 	
-	.hero
+	.hero,
+	.menu
 		margin-top: 52px
-
+	
 	.news__item
 		margin-bottom: 15px
 
@@ -353,11 +514,18 @@
 	.footer__logo
 		margin-bottom: 20px
 
+	.mobile--nav
+		.header__cart
+			&_box
+				max-width: 320px
+				right: -15px
+
+	.menu
+		&__item
+			width: 320px
+			min-width: auto
+			margin: 0 auto 15px
 
 
-
-
-
-
-
+	
 
